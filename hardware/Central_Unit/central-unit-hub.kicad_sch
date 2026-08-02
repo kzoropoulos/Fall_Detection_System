@@ -1315,17 +1315,6 @@
 		)
 		(uuid "5b6f9592-3bca-477b-8e2a-0c4c22450bb6")
 	)
-	(text "v2: Components updated. Wiring added. Revisions may occur."
-		(exclude_from_sim no)
-		(at 178.308 167.894 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "848b4d1d-1585-46bb-a178-f915f173cf43")
-	)
 	(text "Central Unit Hub v2"
 		(exclude_from_sim no)
 		(at 196.596 189.738 0)
@@ -1335,17 +1324,6 @@
 			)
 		)
 		(uuid "a1b09c5f-8c85-4c33-8b84-9c1e164b5ae2")
-	)
-	(text "Components: DFRobot Beetle ESP32-C6 \n/ 3.7V 1000mAh Li-Po Battery \n/ LED Diffused 5mm RGB Programmable WS2812D\n/ Buzzer 2-5V 30mA"
-		(exclude_from_sim no)
-		(at 178.054 177.038 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e2f06e9c-55a6-4b79-8be4-74eab7d660aa")
 	)
 	(no_connect
 		(at 128.27 99.06)
@@ -1368,7 +1346,7 @@
 		(uuid "6f136ebb-186c-4fa7-9797-02f52bc8f116")
 	)
 	(no_connect
-		(at 198.12 63.5)
+		(at 245.11 45.72)
 		(uuid "838b2512-610a-4a63-bf04-09cf033c8a9e")
 	)
 	(no_connect
@@ -1393,7 +1371,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 63.5) (xy 182.88 63.5)
+			(xy 223.52 45.72) (xy 229.87 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1433,7 +1411,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 128.27) (xy 186.69 128.27)
+			(xy 236.22 138.43) (xy 242.57 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1443,7 +1421,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 50.8) (xy 190.5 55.88)
+			(xy 237.49 33.02) (xy 237.49 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1453,7 +1431,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 80.01) (xy 82.55 86.36)
+			(xy 33.02 74.93) (xy 33.02 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1463,7 +1441,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 93.98) (xy 82.55 100.33)
+			(xy 33.02 88.9) (xy 33.02 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1483,7 +1461,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 133.35) (xy 186.69 133.35)
+			(xy 236.22 143.51) (xy 242.57 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1503,7 +1481,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 71.12) (xy 190.5 77.47)
+			(xy 237.49 53.34) (xy 237.49 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1522,7 +1500,7 @@
 		(uuid "f6178882-4022-4c36-838b-3aed65326d90")
 	)
 	(label "BUZZER_CTRL"
-		(at 180.34 128.27 180)
+		(at 236.22 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1542,7 +1520,7 @@
 		(uuid "977a995d-ff42-4d9c-9ddc-114a3b955e6e")
 	)
 	(label "VBAT"
-		(at 82.55 80.01 0)
+		(at 33.02 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1562,7 +1540,7 @@
 		(uuid "e0b55032-4ae5-4cb5-8dee-872061a9430b")
 	)
 	(label "LED_DATA"
-		(at 176.53 63.5 180)
+		(at 223.52 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1741,7 +1719,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 133.35 270)
+		(at 236.22 143.51 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1752,7 +1730,7 @@
 		(fields_autoplaced yes)
 		(uuid "674f822b-70ac-4cbd-a6fa-999dc3ae01dc")
 		(property "Reference" "#PWR05"
-			(at 173.99 133.35 0)
+			(at 229.87 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1763,7 +1741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 133.3499 90)
+			(at 232.41 143.5099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1774,7 +1752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 133.35 0)
+			(at 236.22 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1785,7 +1763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 133.35 0)
+			(at 236.22 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1796,7 +1774,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 133.35 0)
+			(at 236.22 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1820,7 +1798,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 77.47 0)
+		(at 237.49 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1831,7 +1809,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e78811e-4593-455d-9588-72de633d6c16")
 		(property "Reference" "#PWR04"
-			(at 190.5 83.82 0)
+			(at 237.49 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1842,7 +1820,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 82.55 0)
+			(at 237.49 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1852,7 +1830,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 77.47 0)
+			(at 237.49 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1863,7 +1841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 77.47 0)
+			(at 237.49 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1874,7 +1852,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 77.47 0)
+			(at 237.49 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1898,7 +1876,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 100.33 0)
+		(at 33.02 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1909,7 +1887,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f170ac9-f56b-4867-b80c-1c030d2df542")
 		(property "Reference" "#PWR03"
-			(at 82.55 106.68 0)
+			(at 33.02 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1920,7 +1898,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 105.41 0)
+			(at 33.02 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1930,7 +1908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 100.33 0)
+			(at 33.02 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1941,7 +1919,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 100.33 0)
+			(at 33.02 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1952,7 +1930,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 100.33 0)
+			(at 33.02 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1986,8 +1964,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3f93d60-afa6-45e9-9d73-aaa758653160")
-		(property "Reference" "U"
-			(at 140.97 73.66 0)
+		(property "Reference" "U1"
+			(at 140.97 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1996,8 +1974,8 @@
 				)
 			)
 		)
-		(property "Value" "Beetle ESP32-C6"
-			(at 140.97 76.2 0)
+		(property "Value" "DFR1117"
+			(at 140.97 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2028,9 +2006,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 130.81 95.25 0)
-			(hide yes)
+		(property "Description" "Microcontroller"
+			(at 140.97 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2090,7 +2067,7 @@
 		(instances
 			(project "central-unit-hub"
 				(path "/47f0f6ae-486a-4845-bd2a-ee32365606fa"
-					(reference "U")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2098,7 +2075,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 190.5 50.8 0)
+		(at 237.49 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2109,7 +2086,7 @@
 		(fields_autoplaced yes)
 		(uuid "b27419e4-210c-42f4-85b3-d89d5d12e5b6")
 		(property "Reference" "#PWR07"
-			(at 190.5 54.61 0)
+			(at 237.49 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2120,7 +2097,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 190.5 45.72 0)
+			(at 237.49 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2130,7 +2107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 50.8 0)
+			(at 237.49 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2141,7 +2118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 50.8 0)
+			(at 237.49 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2152,7 +2129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 190.5 50.8 0)
+			(at 237.49 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,7 +2153,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 82.55 91.44 0)
+		(at 33.02 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2186,8 +2163,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9c152b8-c9db-4cd2-9c9e-c54587f98d16")
-		(property "Reference" "BT"
-			(at 86.36 88.3284 0)
+		(property "Reference" "BT1"
+			(at 36.83 81.9784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2197,8 +2174,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.7V Li-Po 1000mAh"
-			(at 86.36 90.8684 0)
+		(property "Value" "AKY0571 + MOLEX 51021-0200"
+			(at 36.83 84.5184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2209,7 +2186,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 89.916 90)
+			(at 33.02 84.836 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2220,7 +2197,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 89.916 90)
+			(at 33.02 84.836 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2230,19 +2207,19 @@
 				)
 			)
 		)
-		(property "Description" "Single-cell battery"
-			(at 82.55 91.44 0)
-			(hide yes)
+		(property "Description" "Battery"
+			(at 36.83 87.0584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 82.55 91.44 0)
+			(at 33.02 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2253,7 +2230,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 82.55 91.44 0)
+			(at 33.02 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2264,7 +2241,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 82.55 91.44 0)
+			(at 33.02 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2283,7 +2260,7 @@
 		(instances
 			(project "central-unit-hub"
 				(path "/47f0f6ae-486a-4845-bd2a-ee32365606fa"
-					(reference "BT")
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -2291,7 +2268,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 190.5 63.5 0)
+		(at 237.49 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2301,8 +2278,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f74511aa-d30c-4e5c-b953-b13dbb360be9")
-		(property "Reference" "D"
-			(at 201.93 57.0798 0)
+		(property "Reference" "D1"
+			(at 248.92 36.7598 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2312,7 +2289,7 @@
 			)
 		)
 		(property "Value" "WS2812D"
-			(at 201.93 59.6198 0)
+			(at 248.92 39.2998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2322,7 +2299,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 191.77 71.12 0)
+			(at 238.76 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2334,7 +2311,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 193.04 73.025 0)
+			(at 240.03 55.245 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2345,9 +2322,8 @@
 				(justify left top)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 190.5 63.5 0)
-			(hide yes)
+		(property "Description" "RGB LED"
+			(at 248.92 41.8398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2371,7 +2347,7 @@
 		(instances
 			(project "central-unit-hub"
 				(path "/47f0f6ae-486a-4845-bd2a-ee32365606fa"
-					(reference "D")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2458,7 +2434,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 189.23 130.81 0)
+		(at 245.11 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2468,8 +2444,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffba245f-694c-47b7-932a-de85258aa2b4")
-		(property "Reference" "BZ"
-			(at 193.04 129.5399 0)
+		(property "Reference" "BZ1"
+			(at 248.92 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2480,7 +2456,8 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 193.04 132.0799 0)
+			(at 248.92 142.2399 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2491,7 +2468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 188.595 128.27 90)
+			(at 244.475 138.43 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2502,7 +2479,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 188.595 128.27 90)
+			(at 244.475 138.43 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2512,15 +2489,15 @@
 				)
 			)
 		)
-		(property "Description" "Buzzer, polarized"
-			(at 189.23 130.81 0)
-			(hide yes)
+		(property "Description" "Buzzer"
+			(at 248.92 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -2532,7 +2509,7 @@
 		(instances
 			(project "central-unit-hub"
 				(path "/47f0f6ae-486a-4845-bd2a-ee32365606fa"
-					(reference "BZ")
+					(reference "BZ1")
 					(unit 1)
 				)
 			)

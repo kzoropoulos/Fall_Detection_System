@@ -3036,7 +3036,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 100.33 124.46 0)
+		(at 100.33 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3047,7 +3047,7 @@
 		(fields_autoplaced yes)
 		(uuid "55fe9e92-0b6c-4ed9-9c5b-43ee8e6a0bbc")
 		(property "Reference" "J3"
-			(at 102.87 123.1899 0)
+			(at 102.87 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3058,7 +3058,7 @@
 			)
 		)
 		(property "Value" "S12B-PH-K-S(LF)(SN)"
-			(at 102.87 125.7299 0)
+			(at 102.87 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3069,7 +3069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 124.46 0)
+			(at 100.33 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3080,7 +3080,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 124.46 0)
+			(at 100.33 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3091,7 +3091,7 @@
 			)
 		)
 		(property "Description" "JST-PH Power Input"
-			(at 102.87 128.2699 0)
+			(at 102.87 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
