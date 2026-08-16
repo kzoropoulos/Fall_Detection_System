@@ -523,7 +523,7 @@
   "pcbnew": {
     "last_paths": {
       "idf": "",
-      "netlist": "",
+      "netlist": "peripheral-unit.net",
       "plot": "",
       "specctra_dsn": "",
       "step": "",
@@ -649,7 +649,7 @@
         "uuid": "45f48c77-dfcd-4643-a9e0-82c9bd2c0bba"
       }
     ],
-    "used_designators": "BT1,#PWR1-20,XS1,U1-4,C1,R1-2,J1-5,SW1",
+    "used_designators": "#PWR1-20,BT1,XS1,U1-4,C1,J1-5,R1-2,SW1",
     "variants": []
   },
   "sheets": [

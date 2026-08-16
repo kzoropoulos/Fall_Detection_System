@@ -4,4 +4,6 @@
 	(lib (name "2026-07-29_21-41-27") (type "KiCad") (uri "/home/kzoropoulos/Project_Fall_Detection/hardware/KiCad_Components/TPS7A0212PDBVR/KiCADv6/2026-07-29_21-41-27.kicad_sym") (options "") (descr ""))
 	(lib (name "TPS22860DBVR") (type "KiCad") (uri "/home/kzoropoulos/Project_Fall_Detection/hardware/KiCad_Components/TPS22860DBVR/TPS22860DBVR.kicad_sym") (options "") (descr ""))
 	(lib (name "beetle_esp32-c6") (type "KiCad") (uri "/home/kzoropoulos/Project_Fall_Detection/hardware/KiCad_Components/beetle-esp32-c6/beetle_esp32-c6.kicad_sym") (options "") (descr ""))
+	(lib (name "New_Library") (type "KiCad") (uri "${KIPRJMOD}/New_Library.kicad_sym") (options "") (descr ""))
+	(lib (name "FDS_peripheral_library") (type "KiCad") (uri "${KIPRJMOD}/FDS_peripheral_library.kicad_sym") (options "") (descr ""))
 )

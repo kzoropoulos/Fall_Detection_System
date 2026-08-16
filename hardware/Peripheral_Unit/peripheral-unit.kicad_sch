@@ -1443,25 +1443,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "BT"
-				(at 2.54 2.54 0)
+				(at -3.81 -0.6986 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
+			(property "Value" "3.6V"
+				(at -3.81 1.8414 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -1487,14 +1487,14 @@
 				)
 			)
 			(property "Description" "Single-cell battery"
-				(at 0 0 0)
+				(at -3.81 4.3814 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
 			(property "Sim.Device" "V"
@@ -1614,7 +1614,7 @@
 				)
 			)
 			(symbol "Battery_Cell_1_1"
-				(pin passive line
+				(pin power_out line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "+"
@@ -1632,7 +1632,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name "-"
@@ -3349,26 +3349,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -12.7 11.16 0)
+			(property "Reference" "U2"
+				(at 0.254 16.764 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "TPS22860DBVR"
-				(at -12.7 -14.16 0)
+				(at 6.35 14.478 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "TPS22860DBVR:SOT95P280X145-6N"
@@ -3394,16 +3392,14 @@
 					)
 				)
 			)
-			(property "Description" "0.73-Ω, 5-V, ultra-low leakage load switch"
-				(at 0 0 0)
+			(property "Description" "Power Gating Load Switch"
+				(at 11.684 12.192 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 				)
 			)
 			(property "MF" "Texas Instruments"
@@ -3514,24 +3510,6 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 17.78 -5.08 180)
 					(length 5.08)
@@ -3605,6 +3583,263 @@
 					)
 				)
 			)
+			(symbol "TPS22860DBVR_1_0"
+				(pin power_out line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TPS7A0212PDBVR_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U4"
+				(at 20.32 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TPS7A0218PDBVR"
+				(at 20.32 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SOT23_DBV_TEX"
+				(at -0.508 8.382 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps7a02"
+				(at -0.762 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "LDO Regulator"
+				(at 20.32 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TPS7A0212PDBVR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT23_DBV_TEX SOT23_DBV_TEX-M SOT23_DBV_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS7A0212PDBVR_1_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy 33.02 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -10.16) (xy 33.02 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_out line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -5.08 180)
+					(length 7.62)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS7A0212PDBVR_1_1_1"
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "TPS7A0212PDVR:TPS7A0212PDBVR"
@@ -3616,8 +3851,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
+			(property "Reference" "U3"
+				(at 11.938 12.954 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3626,8 +3861,8 @@
 					)
 				)
 			)
-			(property "Value" "TPS7A0212PDBVR"
-				(at 20.32 7.62 0)
+			(property "Value" "TPS7A0233PDBVR"
+				(at 20.32 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3644,7 +3879,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
@@ -3656,15 +3890,13 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "LDO Regulator"
+				(at 17.526 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3753,42 +3985,6 @@
 					)
 				)
 				(pin input line
-					(at 0 0 0)
-					(length 7.62)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at 40.64 -5.08 180)
 					(length 7.62)
 					(name "EN"
@@ -3824,7 +4020,45 @@
 						)
 					)
 				)
-				(pin output line
+			)
+			(symbol "TPS7A0212PDBVR_1_1"
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
 					(at 40.64 0 180)
 					(length 7.62)
 					(name "OUT"
@@ -4064,6 +4298,242 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0f25648-5632-48ac-9f53-a7e1063c42cb")
+	)
+	(no_connect
+		(at 156.21 80.01)
+		(uuid "03e2cdd4-34ed-45a8-a53a-8c658adff8b4")
+	)
+	(no_connect
+		(at 156.21 87.63)
+		(uuid "0f6a65b6-5d4d-4b06-8d19-06f9608ad86e")
+	)
+	(no_connect
+		(at 264.16 76.2)
+		(uuid "1c833525-ba76-46b2-8a5f-3124e68792cc")
+	)
+	(no_connect
+		(at 264.16 53.34)
+		(uuid "26d47f2e-e171-46c5-b0f6-500493fe5c7b")
+	)
+	(no_connect
+		(at 181.61 41.91)
+		(uuid "2d213b14-05c7-4b10-b1b3-81d150d59ef2")
+	)
+	(no_connect
+		(at 196.85 62.23)
+		(uuid "3142e93d-558b-4e76-929e-039b4b13e385")
+	)
+	(no_connect
+		(at 156.21 118.11)
+		(uuid "3cea7319-240a-4b50-ba6c-c9fd33282566")
+	)
+	(no_connect
+		(at 184.15 27.94)
+		(uuid "40ba9fed-eec0-4b88-ae76-0e6ccda9af97")
+	)
+	(no_connect
+		(at 156.21 107.95)
+		(uuid "44bc0d14-6781-4c11-9009-a575d3862a04")
+	)
+	(no_connect
+		(at 156.21 110.49)
+		(uuid "46839f9e-305e-41e9-b071-7109a0948365")
+	)
+	(no_connect
+		(at 226.06 60.96)
+		(uuid "4cf9eeee-ad57-4e6d-899b-2dccba146007")
+	)
+	(no_connect
+		(at 196.85 87.63)
+		(uuid "529b2d55-cd7c-48e8-b82a-dd92873ce013")
+	)
+	(no_connect
+		(at 156.21 105.41)
+		(uuid "54a003a7-b15c-475b-8598-df2480706069")
+	)
+	(no_connect
+		(at 226.06 63.5)
+		(uuid "558d4599-e01a-46fd-ac6f-09a99a4749c3")
+	)
+	(no_connect
+		(at 156.21 100.33)
+		(uuid "5770d7c4-6cbd-4964-be65-56219e353924")
+	)
+	(no_connect
+		(at 196.85 113.03)
+		(uuid "5b4096d5-6f0f-41c3-8ce9-1ddb8a675297")
+	)
+	(no_connect
+		(at 196.85 123.19)
+		(uuid "6780dbbb-e67c-4f27-9d23-5c09597c0951")
+	)
+	(no_connect
+		(at 196.85 97.79)
+		(uuid "67dd5642-408b-4e06-8712-a5be06077a58")
+	)
+	(no_connect
+		(at 100.33 74.93)
+		(uuid "6dfc6f98-25fe-4188-99e3-e4b5c3e71ad6")
+	)
+	(no_connect
+		(at 100.33 177.8)
+		(uuid "74f339b8-3d13-45fe-a08e-6931c06f80e2")
+	)
+	(no_connect
+		(at 196.85 52.07)
+		(uuid "77199114-904f-41d1-b2c8-2bf1fbfab46e")
+	)
+	(no_connect
+		(at 196.85 107.95)
+		(uuid "7a251cc7-76eb-4c52-b0fe-6c169da6aaa5")
+	)
+	(no_connect
+		(at 156.21 54.61)
+		(uuid "7ca6cf9a-0651-48fe-8efb-d211de026918")
+	)
+	(no_connect
+		(at 156.21 69.85)
+		(uuid "7db12e62-b1a7-4203-9de3-71bbc027033f")
+	)
+	(no_connect
+		(at 156.21 123.19)
+		(uuid "7f3e3f2f-46a8-4d82-917d-e5585ed97ba5")
+	)
+	(no_connect
+		(at 196.85 115.57)
+		(uuid "8a2ff572-373c-43ec-9e71-93e7dded8b41")
+	)
+	(no_connect
+		(at 156.21 72.39)
+		(uuid "92501cf6-04ed-4cfa-8602-cecf643cec52")
+	)
+	(no_connect
+		(at 196.85 95.25)
+		(uuid "9571db11-d9d3-451e-a0cf-52785072ea0b")
+	)
+	(no_connect
+		(at 196.85 67.31)
+		(uuid "97b5bcc5-537a-4fb8-b44c-8d04d01cf5b3")
+	)
+	(no_connect
+		(at 156.21 115.57)
+		(uuid "9a5e8224-bf25-4cef-8139-f93aa05c6ee4")
+	)
+	(no_connect
+		(at 156.21 95.25)
+		(uuid "a3085b52-5193-4489-b944-628ee1b977dc")
+	)
+	(no_connect
+		(at 264.16 63.5)
+		(uuid "a3f9b291-fca7-4d29-9bb1-4019f6c23f2a")
+	)
+	(no_connect
+		(at 156.21 59.69)
+		(uuid "a6ae9ba5-15b7-4701-85fa-4e474762d825")
+	)
+	(no_connect
+		(at 156.21 128.27)
+		(uuid "a6f5527c-9479-4f3f-b87c-2434434c6348")
+	)
+	(no_connect
+		(at 264.16 43.18)
+		(uuid "a8b2ea35-f3f0-4e42-8dce-3c909a96b1d8")
+	)
+	(no_connect
+		(at 156.21 90.17)
+		(uuid "aa682631-0d40-4ac3-aaa7-0778340e767b")
+	)
+	(no_connect
+		(at 156.21 64.77)
+		(uuid "ab229dba-23b0-4cd3-a6f9-9c4e3c850ecc")
+	)
+	(no_connect
+		(at 156.21 77.47)
+		(uuid "ab27b0b1-30f2-4d14-a6b6-89f51df18f24")
+	)
+	(no_connect
+		(at 196.85 100.33)
+		(uuid "b099d582-24b0-4019-9953-a78c323276d6")
+	)
+	(no_connect
+		(at 156.21 120.65)
+		(uuid "b9aa0588-fdf6-4b9c-9e67-3535fe3a73ed")
+	)
+	(no_connect
+		(at 264.16 71.12)
+		(uuid "bcc44b5d-b12e-49da-b199-ae1385a273b3")
+	)
+	(no_connect
+		(at 196.85 92.71)
+		(uuid "c62a9a0b-cb59-4db3-9172-e0f19ab2774a")
+	)
+	(no_connect
+		(at 156.21 97.79)
+		(uuid "c7d375b4-3f77-4c8e-b08e-18677a3551df")
+	)
+	(no_connect
+		(at 196.85 54.61)
+		(uuid "c8284ac4-ad07-4373-ae52-7e3756117c93")
+	)
+	(no_connect
+		(at 156.21 102.87)
+		(uuid "c8464256-a316-4fc1-a053-6057c3b4c11b")
+	)
+	(no_connect
+		(at 156.21 57.15)
+		(uuid "d348e755-376f-44b7-a983-5ab364ff53c7")
+	)
+	(no_connect
+		(at 196.85 118.11)
+		(uuid "e34b02d8-8203-4c28-9a74-4eb6d2b91b64")
+	)
+	(no_connect
+		(at 264.16 68.58)
+		(uuid "e6b83e87-8029-4368-b2be-1347af2a85e9")
+	)
+	(no_connect
+		(at 156.21 125.73)
+		(uuid "e7c4f21d-dcc9-47ef-9c10-08158c367f60")
+	)
+	(no_connect
+		(at 264.16 50.8)
+		(uuid "ec25a976-acea-49b7-b00e-fb3074d08ab8")
+	)
+	(no_connect
+		(at 196.85 69.85)
+		(uuid "ec73337f-efb9-40f9-b306-029b7a5d7221")
+	)
+	(no_connect
+		(at 156.21 67.31)
+		(uuid "ed109dad-da6d-4457-a101-afe6bdce0aa8")
+	)
+	(no_connect
+		(at 196.85 105.41)
+		(uuid "eeabc174-7357-4d37-8262-9af91cf3b0f1")
+	)
+	(no_connect
+		(at 179.07 41.91)
+		(uuid "f002d6df-e151-4852-b21d-b92a64d1997b")
+	)
+	(no_connect
+		(at 196.85 102.87)
+		(uuid "f643f72a-8ee4-48f3-8d2e-28f66dd1c7bb")
+	)
+	(no_connect
+		(at 156.21 113.03)
+		(uuid "fac98a6e-010d-4b5b-820c-fa9039c9bd3c")
+	)
+	(no_connect
+		(at 196.85 120.65)
+		(uuid "fdafe8c1-26e0-4b36-99eb-caa2154877b7")
+	)
+	(no_connect
+		(at 196.85 90.17)
+		(uuid "fe61f4cd-8bc9-40b9-b542-8f6955f2c9c2")
+	)
+	(no_connect
+		(at 196.85 72.39)
+		(uuid "fee71355-a88c-429c-94b8-20b7cb9c6306")
 	)
 	(wire
 		(pts
@@ -5531,8 +6001,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1303ab53-ccdc-4e26-b7c0-cc22bcfeda95")
-		(property "Reference" "C"
-			(at 115.062 64.516 90)
+		(property "Reference" "C1"
+			(at 110.236 56.896 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5542,8 +6012,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6TPB470M"
-			(at 115.062 61.976 90)
+		(property "Value" "470μF"
+			(at 114.046 60.706 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5555,7 +6025,6 @@
 		)
 		(property "Footprint" ""
 			(at 114.3 65.0748 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5575,8 +6044,8 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor"
-			(at 115.062 59.436 90)
+		(property "Description" "6TPB470M"
+			(at 117.602 58.674 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5595,7 +6064,7 @@
 		(instances
 			(project "peripheral-unit"
 				(path "/45f48c77-dfcd-4643-a9e0-82c9bd2c0bba"
-					(reference "C")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -6615,7 +7084,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c09813f-91be-4901-982a-d518137c1527")
-		(property "Reference" "BT"
+		(property "Reference" "BT1"
 			(at 43.18 37.4014 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6626,7 +7095,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ER34615"
+		(property "Value" "3.6V"
 			(at 43.18 39.9414 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6659,7 +7128,7 @@
 				)
 			)
 		)
-		(property "Description" "Battery"
+		(property "Description" "Single-cell battery"
 			(at 43.18 42.4814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6712,7 +7181,7 @@
 		(instances
 			(project "peripheral-unit"
 				(path "/45f48c77-dfcd-4643-a9e0-82c9bd2c0bba"
-					(reference "BT")
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -7034,6 +7503,7 @@
 		)
 	)
 	(symbol
+		(lib_name "TPS7A0212PDBVR_1")
 		(lib_id "TPS7A0212PDVR:TPS7A0212PDBVR")
 		(at 59.69 175.26 0)
 		(unit 1)
@@ -7066,7 +7536,7 @@
 			)
 		)
 		(property "Footprint" "SOT23_DBV_TEX"
-			(at 59.69 175.26 0)
+			(at 59.182 166.878 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7077,7 +7547,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tps7a02"
-			(at 59.69 175.26 0)
+			(at 58.928 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7394,10 +7864,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b883bbaa-db3e-4a7a-b970-1ae63c6be3fd")
 		(property "Reference" "U3"
-			(at 80.01 59.69 0)
+			(at 71.628 59.436 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7439,7 +7908,7 @@
 			)
 		)
 		(property "Description" "LDO Regulator"
-			(at 80.01 64.77 0)
+			(at 77.216 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8122,7 +8591,7 @@
 		(dnp no)
 		(uuid "d642c0a6-e38c-48f2-8b4f-a7593851d4ce")
 		(property "Reference" "R2"
-			(at 230.378 129.794 0)
+			(at 230.632 127.508 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8132,7 +8601,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 230.378 127.254 0)
+			(at 230.632 129.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
