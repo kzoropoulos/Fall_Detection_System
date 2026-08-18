@@ -1,0 +1,109 @@
+(footprint "Untitled"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.02 -14.64 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "283ed707-7597-479b-b64a-4ec1819a7e1c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Untitled"
+		(at 0.02 -13.14 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0287cfc7-2ae1-4023-bfde-c385adae85bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "064f1a6d-7d8a-413b-88c3-464aaec3f1d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9b8fc8d-cc56-40b2-9c0f-fef697c93272")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 5.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "10e1e0d1-9893-4838-bd47-91642629b660")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.02 -11.64 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "be03d8d1-4737-42b3-a253-a968fb2bbe78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 1.75 -1.75)
+		(size 1.27 1.27)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "a927abb0-942b-462f-a02c-47dbf2b71318")
+	)
+	(pad "2" thru_hole circle
+		(at 1.75 1.75)
+		(size 1.27 1.27)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "52b601c1-72f1-48b1-be59-8567485ff3b7")
+	)
+	(pad "3" thru_hole circle
+		(at -1.75 1.75)
+		(size 1.27 1.27)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "c16f20bb-8b32-459d-bb74-06b1280c7055")
+	)
+	(embedded_fonts no)
+)

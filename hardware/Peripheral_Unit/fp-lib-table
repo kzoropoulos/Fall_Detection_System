@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "FDS_library") (type "KiCad") (uri "${KIPRJMOD}/FDS_library.pretty") (options "") (descr ""))
+	(lib (name "Peripheral_Unit") (type "KiCad") (uri "${KIPRJMOD}/FDS_library.pretty/Peripheral_Unit.pretty") (options "") (descr ""))
+)
